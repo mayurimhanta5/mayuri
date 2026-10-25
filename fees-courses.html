@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fees & Courses | DEV Tuition Classes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Medium Buttons CSS -->
+    <style>
+        .medium-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .medium-selector button {
+            background-color: #342B50;
+            color: #FFFFFF;
+            border: 2px solid #702F3D;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .medium-selector button:hover,
+        .medium-selector button.active {
+            background-color: #702F3D;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>DEV <span>Tuition Classes</span></h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="fees-courses.html" class="active">Fees & Courses</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <p>COURSES & FEES</p>
+            <h1>Fees <span>& Courses</span></h1>
+            <p>Affordable learning with quality education and personal attention.</p>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="courses-section">
+        <div class="section-heading">
+            <p>CLASSES WE OFFER</p>
+            <h2>Academic Support For Every Stage</h2>
+        </div>
+
+        <div class="course-cards">
+
+            <div class="course-card">
+                <div class="course-number">01</div>
+                <h3>Jr. KG – Sr. KG</h3>
+                <p>Foundation learning with focus on basic concepts,
+                    reading, writing and learning skills.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">02</div>
+                <h3>Std. 1 – 5</h3>
+                <p>Strong academic foundation with regular practice
+                    and subject-wise guidance.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">03</div>
+                <h3>Std. 6 – 8</h3>
+                <p>Concept-based learning, revision and regular
+                    academic practice.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-number">04</div>
+                <h3>Std. 9 – 12</h3>
+                <p>Focused academic guidance to help students
+                    prepare for higher classes and examinations.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MONTHLY FEES -->
+    <section class="fees-section">
+
+        <div class="section-heading">
+            <p>MONTHLY FEES</p>
+            <h2>Simple & Affordable Fee Structure</h2>
+        </div>
+
+        <!-- MEDIUM SELECTION BUTTONS -->
+        <div class="medium-selector">
+            <button type="button" onclick="showFees('gujarati', this)">
+                Gujarati Medium
+            </button>
+
+            <button type="button" onclick="showFees('english', this)">
+                English Medium
+            </button>
+        </div>
+
+        <!-- GUJARATI MEDIUM FEES -->
+        <div id="gujarati" class="fee-container medium-fee"
+            style="display: none;">
+
+            <div class="fee-heading">
+                <h3>Gujarati Medium</h3>
+                <p>Monthly Tuition Fees</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Standard</th>
+                            <th>Monthly Fees</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Jr. KG</td><td>₹500</td></tr>
+                        <tr><td>Sr. KG</td><td>₹500</td></tr>
+                        <tr><td>Std. 1</td><td>₹550</td></tr>
+                        <tr><td>Std. 2</td><td>₹600</td></tr>
+                        <tr><td>Std. 3</td><td>₹650</td></tr>
+                        <tr><td>Std. 4</td><td>₹700</td></tr>
+                        <tr><td>Std. 5</td><td>₹750</td></tr>
+                        <tr><td>Std. 6</td><td>₹800</td></tr>
+                        <tr><td>Std. 7</td><td>₹850</td></tr>
+                        <tr><td>Std. 8</td><td>₹900</td></tr>
+                        <tr><td>Std. 9</td><td>₹1,000</td></tr>
+                        <tr><td>Std. 10</td><td>₹1,200</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ENGLISH MEDIUM FEES -->
+        <div id="english" class="fee-container medium-fee"
+            style="display: none;">
+
+            <div class="fee-heading">
+                <h3>English Medium</h3>
+                <p>Monthly Tuition Fees</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Standard</th>
+                            <th>Monthly Fees</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Jr. KG</td><td>₹600</td></tr>
+                        <tr><td>Sr. KG</td><td>₹600</td></tr>
+                        <tr><td>Std. 1</td><td>₹700</td></tr>
+                        <tr><td>Std. 2</td><td>₹700</td></tr>
+                        <tr><td>Std. 3</td><td>₹750</td></tr>
+                        <tr><td>Std. 4</td><td>₹800</td></tr>
+                        <tr><td>Std. 5</td><td>₹850</td></tr>
+                        <tr><td>Std. 6</td><td>₹900</td></tr>
+                        <tr><td>Std. 7</td><td>₹950</td></tr>
+                        <tr><td>Std. 8</td><td>₹1,000</td></tr>
+                        <tr><td>Std. 9</td><td>₹1,200</td></tr>
+                        <tr><td>Std. 10</td><td>₹1,500</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- NOTE -->
+    <section class="fee-note">
+        <div class="fee-note-content">
+            <h3>Need More Information?</h3>
+
+            <p>
+                For admission details, class timings, subjects and other
+                information, please contact DEV Tuition Classes directly.
+            </p>
+
+            <a href="contact.html" class="btn primary-btn">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <h2>DEV <span>Tuition Classes</span></h2>
+                <p>Quality Education • Personal Attention</p>
+            </div>
+
+            <p>Jr. KG to 12th Standard</p>
+
+            <p class="copyright">
+                © 2026 DEV Tuition Classes. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function showFees(medium, button) {
+
+            // Hide both fee tables
+            document.querySelectorAll('.medium-fee').forEach(function (table) {
+                table.style.display = 'none';
+            });
+
+            // Show selected medium's table
+            document.getElementById(medium).style.display = 'block';
+
+            // Remove active class from both buttons
+            document.querySelectorAll('.medium-selector button').forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+
+            // Highlight selected button
+            button.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
